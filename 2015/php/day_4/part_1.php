@@ -1,18 +1,18 @@
 <?php
 
-$inputdata = trim(file_get_contents("./input.txt"));
+$inputData = trim(file_get_contents("./input.txt"));
 
-//$tempkey = "abcdef";
+//$tempKey = "abcdef";
 
-$currentnumber = 1;
+$currentNumber = 1;
 while (true) {
-    $currentfivesymbols = substr(md5($inputdata . $currentnumber), 0, 5);
+    $currentFiveSymbols = substr(md5($inputData . $currentNumber), 0, 5);
 
     // we regex boys
-    if (preg_match("/[0]{5}/", $currentfivesymbols)) {
-        echo "found number $currentnumber";
+    if (preg_match("/[0]{5}/", $currentFiveSymbols)) {
+        echo "found number $currentNumber";
         break;
     }
 
-    $currentnumber++;
+    $currentNumber++;
 }
