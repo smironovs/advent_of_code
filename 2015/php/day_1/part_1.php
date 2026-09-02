@@ -2,17 +2,17 @@
 
 $inputData = file_get_contents("./input.txt");
 
-// Santas starting point (ground floor)
-$startingFloor = 0;
+// santas starting point (ground floor)
+$startingfloor = 0;
 
 for ($i = 0; $i < strlen($inputData); $i++) {
     if ($inputData[$i] == "(") {
-        $startingFloor++;
+        $startingfloor++;
     } elseif ($inputData[$i] == ")") {
-        $startingFloor--;
+        $startingfloor--;
     }
 }
 
-echo $startingFloor;
+echo $startingfloor;
 
 // echo $inputData;

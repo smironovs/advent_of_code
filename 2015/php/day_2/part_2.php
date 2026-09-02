@@ -1,7 +1,7 @@
 <?php
 $inputData = file_get_contents("./input.txt");
 
-//$inputData = "2x3x4\n1x1x10";
+//$inputdata = "2x3x4\n1x1x10";
 
 $explodedData = explode("\n", trim($inputData));
 
